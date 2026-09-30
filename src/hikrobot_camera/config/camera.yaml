@@ -3,3 +3,10 @@
 /hikrobot_camera:
   ros__parameters:
     use_sim_time: false
+    camera_ip: ""      # 默认IP，留空或不写则用序列号
+    #serial_number: "00D36741056"
+    serial_number: "Vir76311586"     # 默认序列号，两者选其一
+    exposure_time: 5000.0            # 曝光时间
+    gain: 0.0                        # 增益
+    frame_rate: 30.0                 # 帧率
+    image_topic: "/image_raw"        # 发布话题
