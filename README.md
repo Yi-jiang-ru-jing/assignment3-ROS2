@@ -99,5 +99,18 @@ ros2 launch hikrobot_camera camera.launch.py params_file:=/absolute/path/to/came
 
 例如：
 
-1. 如何编译：
-2. 运行方式：
+### 编译
+```bash
+colcon build --symlink-install --packages-select hikrobot_camera
+source /opt/ros/humble/setup.zsh
+source install/setup.zsh
+```
+### 运行
+```bash
+ros2 launch hikrobot_camera camera.launch.py
+```
+### 查看
+```bash
+source install/setup.zsh
+ros2 run rqt_image_view rqt_image_view
+```
